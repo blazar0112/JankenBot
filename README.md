@@ -48,4 +48,17 @@ PowerShell視窗輸入  python.exe .\jankenbot.py 按 ENTER
 	chrome_driver_path = R'D:\install\chromedriver_win32\chromedriver.exe' 到你放的位置 例： R'E:\my_folder\chromedriver_win32\chromedriver.exe'
 	
 	路徑可以點資料夾上方的位置 會變成 D:\install\chromedriver_win32 格式可以複製, 自己補上 chromedriver.exe
+
+3. Config JankenBot
+
+	可以透過 jankenbot.py 的 23 行修改要每天固定出同樣的或者隨機
 	
+	22 `# you can change strategy to Strategy.Fixed or Strategy.Random`
+	
+	23 `strategy = Strategy.Fixed`
+	
+	可以透過 jankenbot.py 的 25 行修改要每天固定出的要是哪一種
+	
+	24 `# you can change fixed move, only used when strategy is Strategy.Fixed`
+	
+	25 `fixed_move = Move.Scissors`

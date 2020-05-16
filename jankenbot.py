@@ -57,7 +57,7 @@ def check_janken_page():
     driver.get(select_url)
     print('Move selected as', move.name, '[JP:', japanese_names[move]+']')
 
-schedule.every(10).seconds.do(check_janken_page)
+schedule.every().hour.do(check_janken_page)
 
 check_janken_page()
 
